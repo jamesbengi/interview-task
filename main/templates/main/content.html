@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+</head>
+<body>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>fullnames</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          
+          {%for details in data %}
+          <tr>
+            <td>{{details.fullnames}}</td>
+            <td>{{details.email}}</td>
+            <td>{{details.phone}}</td>
+            <td>{{details.address}}</td>
+
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    
+   
+    
+</body>
+</html>
